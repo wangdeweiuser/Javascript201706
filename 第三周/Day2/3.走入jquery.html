@@ -20,47 +20,47 @@
 
 
     
-    //    console.log($); // $ 有可能和其他js库 prototype.js $ 冲突
-    //    console.log(jQuery);
-    //
-    //    var $$ = $.noConflict(); // 转让$ 避免和其他js库冲突
-    //    console.log($$);
-    //    console.log($$('#oDiv'));
+        console.log($); // $ 有可能和其他js库 prototype.js $ 冲突
+        console.log(jQuery);
 
-    //    (function ($) {
-    //        console.log($);
-    //    })(jQuery);
+        var $$ = $.noConflict(); // 转让$ 避免和其他js库冲突
+        console.log($$);
+        console.log($$('#oDiv'));
+
+        (function ($) {
+            console.log($);
+        })(jQuery);
 
 
-    //    window.onload 和 $(document).ready();
-    //    1.加载区别
-    //    window.onload DOM结构 html页面所有文件资源（图片 字体）都加载完后 才会执行
-    //    $(document).ready() DOM结构 加载完后 就执行
-    //    2.区别二
+        window.onload 和 $(document).ready();
+        1.加载区别
+        window.onload DOM结构 html页面所有文件资源（图片 字体）都加载完后 才会执行
+        $(document).ready() DOM结构 加载完后 就执行
+        2.区别二
 
-    //  window.onload 只执行最后一次绑定的处理函数 绑定多次 最后一次会将前面的覆盖掉
-    //    window.onload = function () {
-    //        console.log('aaa');
-    //    };
-    //
-    //    window.onload = function () {
-    //        console.log('bbb');
-    //    }
+      window.onload 只执行最后一次绑定的处理函数 绑定多次 最后一次会将前面的覆盖掉
+        window.onload = function () {
+            console.log('aaa');
+        };
 
-    //  $(document).ready 绑定多次 可以执行多次
-//    $(document).ready(function () {
-//        // jq code
-//        console.log(222222);
-//    });
+        window.onload = function () {
+            console.log('bbb');
+        }
+
+      $(document).ready 绑定多次 可以执行多次
+    $(document).ready(function () {
+      // jq code
+       console.log(222222);
+    });
     $(document).ready(function () {
         // jq code
         console.log(3333);
     });
 
     // 区别三  $(document).ready缩写
-//    $(function () {
-//        // jq code
-//    });
+    $(function () {
+        // jq code
+   });
 </script>
 </body>
 </html>

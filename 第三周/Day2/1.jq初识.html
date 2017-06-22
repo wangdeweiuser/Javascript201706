@@ -21,9 +21,9 @@
     //  jq 2.0 不兼容 6-8 针对移动端（目前 zepto）
     //  jq 3.0 不兼容 6-8 移除了一些特性 增加了一些新特性
 
-    // $  jQuery 都指向jq的构造函数 无new构造实例
-    //    window.jQuery = window.$ = jQuery; 将jq构造函数分别过载到全局属性jQuery和$上 供我们全局使用
-    //    console.dir($);
+     $  jQuery 都指向jq的构造函数 无new构造实例
+        window.jQuery = window.$ = jQuery; 将jq构造函数分别过载到全局属性jQuery和$上 供我们全局使用
+        console.dir($);
     var oDiv = document.getElementById('oDiv');
     console.dir(oDiv); // 原生对象
     console.log($('#oDiv')); // jq 对象 在内部被包装成jq对象
